@@ -4,6 +4,7 @@ from flask_cors import CORS
 import PyPDF2
 import pytesseract
 from PIL import Image
+import platform
 from backend.chat import run_rag
 
 
