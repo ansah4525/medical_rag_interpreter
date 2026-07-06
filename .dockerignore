@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# Git
+.git
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Runtime files
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db

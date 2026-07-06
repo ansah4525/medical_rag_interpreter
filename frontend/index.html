@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Report AI Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🧠 Medical Report Assistant</h1>
+  </header>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    ⚠️ This tool explains medical information but does not provide diagnosis or treatment.
+  </div>
+
+  <!-- Chat -->
+  <div id="chatWindow" class="chat-window"></div>
+
+  <!-- Upload -->
+  <div class="upload-box">
+    <label for="fileInput" class="upload-label">📄 Upload medical report</label>
+    <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png">
+    <span class="status" id="docStatus">No document uploaded</span>
+  </div>
+
+  <!-- Quick Prompts -->
+  <div class="quick-prompts">
+    <button class="prompt-btn">Explain my report in simple terms</button>
+    <button class="prompt-btn">What are abnormal values?</button>
+    <button class="prompt-btn">Summarize key findings</button>
+    <button class="prompt-btn">Explain medical terms</button>
+  </div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <input id="promptInput" type="text" placeholder="Ask a question about your report...">
+    <button id="sendBtn">➤</button>
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
