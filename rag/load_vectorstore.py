@@ -1,9 +1,12 @@
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_mistralai import MistralAIEmbeddings
 def load_vectorstore():
-    embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    
+
+    embeddings = MistralAIEmbeddings(
+        model="mistral-embed"
     )
 
     return Chroma(

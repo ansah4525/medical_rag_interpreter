@@ -1,6 +1,7 @@
 import json
 from dotenv import load_dotenv
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_mistralai import MistralAIEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 
@@ -13,9 +14,10 @@ with open("data/medical_reference_knowledge.json") as f:
 
 docs = chunk_lab_json(medical_json)
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-)
+embeddings  =MistralAIEmbeddings(
+        model="mistral-embed"
+    )
+
 
 db = Chroma.from_documents(
     documents=docs,
