@@ -1,9 +1,9 @@
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-
+from langchain_community.embeddings import HuggingFaceEmbeddings
 def load_vectorstore():
-    embeddings = OpenAIEmbeddings(
-        model="text-embedding-3-small"
+    embeddings = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
     return Chroma(

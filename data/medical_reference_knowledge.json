@@ -1,0 +1,761 @@
+{
+  "LDL": {
+    "test_name": "LDL Cholesterol",
+    "what_it_measures": "LDL or low-density lipoprotein cholesterol is a type of lipoprotein in your blood that carries fats to various cells in your body.",
+    "reference_ranges": {
+      "low": {
+        "value": "",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Below 100 mg/dL",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "100 mg/dL or higher",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A low LDL level indicates that what you're doing is working well for maintaining a healthy level of low-density lipoprotein.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a low LDL level is generally beneficial for cardiovascular health.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal LDL level indicates typical or expected functioning and a lower risk of cardiovascular disease.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "A normal LDL level can be maintained through a balanced diet, regular physical activity, and avoiding tobacco use.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "A high LDL level may increase the risk of plaque buildup in the arteries, leading to cardiovascular diseases such as heart attack and stroke.",
+        "common_factors": [
+          "Diet high in saturated and trans fats",
+          "Overweight/obesity",
+          "Tobacco use",
+          "Certain medications",
+          "Medical conditions like diabetes and chronic kidney disease",
+          "Age and genetic factors"
+        ],
+        "age_context": "As you get older, your cholesterol levels naturally go up. Females typically have higher LDL levels after menopause.",
+        "lifestyle_context": "Lifestyle changes such as eating heart-healthy foods, increasing physical activity, and managing stress can help lower LDL levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "high_cholesterol": {
+    "correlation_strength": "moderate",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "LDL", "correlation": 0.653138 },
+      { "marker": "Triglycerides", "correlation": 0.767810 },
+      { "marker": "HDL", "correlation": -0.620161 }
+    ],
+    "interpretation": "LDL and triglyceride levels show positive correlation, while HDL shows negative correlation with high cholesterol.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+   
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/articles/24391-ldl-cholesterol"
+    ]
+  },
+  "blood_glucose": {
+    "test_name": "Blood Glucose (Sugar) Test",
+    "what_it_measures": "A blood glucose test measures the level of glucose (sugar) in your blood, which is the body's main source of energy.",
+    "reference_ranges": {
+      "low": {
+        "value": "Below 70 mg/dL (3.9 mmol/L)",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "70 to 99 mg/dL (3.9 to 5.5 mmol/L)",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "100 mg/dL (5.6 mmol/L) and above",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A blood sugar result of 70 mg/dL or lower is considered too low for most adults who have diabetes.",
+        "common_factors": [
+          "Liver disease",
+          "Kidney disease",
+          "Hypothyroidism",
+          "Addison disease",
+          "Alcohol use disorder",
+          "Insulinoma"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Episodes of low blood sugar can occur if you eat less than usual after taking your regular dose of diabetes medication, or if you exercise more than you typically do.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A healthy blood glucose level for someone without diabetes is 70 to 99 mg/dL (3.9 to 5.5 mmol/L), indicating typical or expected functioning.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet and regular physical activity can help keep blood glucose levels within the normal range.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "If your blood glucose level is 100 to 125 mg/dL (5.6 to 6.9 mmol/L), it usually means you have prediabetes. Levels of 126 mg/dL (7.0 mmol/L) or higher may indicate diabetes.",
+        "common_factors": [
+          "Issues with adrenal glands",
+          "Issues with pancreas",
+          "Hyperthyroidism",
+          "Significant stress",
+          "Certain medications"
+        ],
+        "age_context": "The American Diabetes Association recommends regular screening for anyone age 35 or older.",
+        "lifestyle_context": "Factors such as diet, physical activity, and stress management can influence blood glucose levels. A balanced diet and regular exercise may help manage high blood sugar levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "follow_up": "General informational follow-up only. No advice.",
+    "risk_associations": {
+  "diabetes": {
+    "correlation_strength": "strong",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "blood_glucose", "correlation": 0.813150 },
+      { "marker": "hba1c", "correlation": 0.768908 }
+    ],
+    "interpretation": "Blood glucose and HbA1c levels show a strong positive correlation with diabetes.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "sources": [
+      "https://my.clevelandclinic.org/health/diagnostics/12363-blood-glucose-test",
+      "https://www.mayoclinic.org/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963",
+      "https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631",
+      "https://www.mayoclinic.org/diseases-conditions/hypoglycemia/symptoms-causes/syc-20373685"
+    ]
+  },
+  "hba1c": {
+    "test_name": "Hemoglobin A1C (HbA1C) Test",
+    "what_it_measures": "The A1C test measures glycated hemoglobin, which forms when glucose in your blood attaches to hemoglobin, reflecting the average blood sugar over the past two to three months.",
+    "reference_ranges": {
+      "low": {
+        "value": "<5.7%",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "5.7% - 6.4%",
+        "label": "Normal"
+      },
+      "high": {
+        "value": ">=6.5%",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A low A1C level indicates that your average blood sugar levels over the past two to three months are within a healthy range.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet and regular physical activity can help keep A1C levels within a healthy range.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal A1C level suggests typical blood sugar control over the past two to three months.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "A healthy lifestyle, including a balanced diet and regular exercise, supports normal A1C levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "A high A1C level may indicate poor blood sugar control over the past two to three months and can be a risk factor for diabetes and other health conditions.",
+        "common_factors": [
+          "Iron deficiency anemia",
+          "B12 or folate-deficiency anemia",
+          "Aging",
+          "Hypothyroidism",
+          "Genetic hemoglobin variants",
+          "Certain medications",
+          "Kidney or liver disease",
+          "Spleen disorders"
+        ],
+        "age_context": "Aging can naturally lead to higher A1C levels even in the absence of diabetes.",
+        "lifestyle_context": "Factors such as stress, poor diet, and lack of physical activity can contribute to higher A1C levels. Maintaining a healthy weight, regular exercise, and stress management may help lower A1C levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "diabetes": {
+    "correlation_strength": "strong",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "hba1c", "correlation": 0.768908 },
+      { "marker": "blood_glucose", "correlation": 0.813150 }
+    ],
+    "interpretation": "HbA1c levels show a strong positive correlation with diabetes when evaluated alongside blood glucose.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/L",
+      "https://www.nutrisense.io/blog/reasons-a1c-high-not-diabetic?srsltid=AfmBOoquAka8AF1iLGYYn1kXq2Jmx0EpLIvvcr7UUUw7VEAh8u24mH-f"
+    ]
+  },
+  "Systolic_BP": {
+    "test_name": "Blood Pressure Test",
+    "what_it_measures": "Blood pressure measures the force of blood against the walls of the arteries during heartbeats and when the heart is at rest.",
+    "reference_ranges": {
+      "low": {
+        "value": "Below 90/60 mm Hg",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Below 120/80 mm Hg",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "130/80 mm Hg or higher",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "Low blood pressure, or hypotension, can cause dizziness, fainting, and fall-related injuries. Severely low blood pressure may limit blood flow to major organs and lead to life-threatening complications.",
+        "common_factors": [
+          "Dehydration",
+          "Heart problems",
+          "Endocrine disorders",
+          "Severe infection (septicemia)",
+          "Blood loss"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Low blood pressure can be influenced by factors such as dehydration or prolonged bed rest.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal blood pressure reading indicates typical or expected functioning of the cardiovascular system.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a healthy lifestyle, including regular exercise and a balanced diet, can help keep blood pressure within the normal range.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "High blood pressure, or hypertension, is a major risk factor for cardiovascular disease and can lead to serious health complications if not managed.",
+        "common_factors": [
+          "Obesity",
+          "Lack of physical activity",
+          "High salt intake",
+          "Excessive alcohol consumption",
+          "Stress"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Lifestyle changes such as losing weight, exercising regularly, eating a healthy diet, reducing salt intake, and managing stress can help lower blood pressure.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "hypertension": {
+    "correlation_strength": "strong",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "Systolic_BP", "correlation": 0.711028 },
+      { "marker": "Diastolic_BP", "correlation": 0.801937 }
+    ],
+    "interpretation": "Systolic and diastolic blood pressure values show a strong positive correlation with hypertension.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/diagnostics/17649-blood-pressure",
+      "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/high-blood-pressure/art-20046974"
+    ]
+  },
+  "Diastolic_BP": {
+    "test_name": "Blood Pressure Test",
+    "what_it_measures": "Blood pressure measures the force of blood against the walls of the arteries during heartbeats and when the heart is at rest.",
+    "reference_ranges": {
+      "low": {
+        "value": "Below 90/60 mm Hg",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Below 120/80 mm Hg",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "130/80 mm Hg or higher",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "Low blood pressure, or hypotension, can cause dizziness, fainting, and fall-related injuries. Severely low blood pressure may limit blood flow to major organs and lead to life-threatening complications.",
+        "common_factors": [
+          "Dehydration",
+          "Heart problems",
+          "Endocrine disorders",
+          "Severe infection (septicemia)",
+          "Blood loss"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Staying hydrated and avoiding sudden changes in posture may help manage low blood pressure.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal blood pressure reading indicates typical or expected functioning of the cardiovascular system.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet and regular exercise can help keep blood pressure within the normal range.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "High blood pressure, or hypertension, is a major risk factor for cardiovascular disease and can lead to serious health complications if not managed.",
+        "common_factors": [
+          "Obesity",
+          "Lack of physical activity",
+          "High salt intake",
+          "Excessive alcohol consumption",
+          "Stress"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Lifestyle changes such as losing weight, exercising regularly, eating a healthy diet, reducing salt intake, and managing stress can help lower blood pressure.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "hypertension": {
+    "correlation_strength": "strong",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "Diastolic_BP", "correlation": 0.801937 },
+      { "marker": "Systolic_BP", "correlation": 0.711028 }
+    ],
+    "interpretation": "Diastolic and systolic blood pressure values show a strong positive correlation with hypertension.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/diagnostics/17649-blood-pressure",
+      "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/high-blood-pressure/art-20046974"
+    ]
+  },
+  "HDL": {
+    "test_name": "HDL Cholesterol",
+    "what_it_measures": "HDL cholesterol measures the level of high-density lipoprotein in your blood, which helps assess your risk for cardiovascular disease.",
+    "reference_ranges": {
+      "low": {
+        "value": "Below 40 mg/dL (males) or below 50 mg/dL (females)",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "40 to 80 mg/dL (males) or 50 to 80 mg/dL (females)",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "Above 80 mg/dL (everyone)",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "Low HDL cholesterol may indicate a higher risk of heart disease.",
+        "common_factors": [
+          "Metabolic syndrome",
+          "Overweight or obesity",
+          "Smoking or tobacco use",
+          "Insulin resistance",
+          "Familial combined hyperlipidemia",
+          "ApoA1 deficiency",
+          "Tangier disease",
+          "Certain medications"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Lifestyle factors such as smoking and obesity can contribute to low HDL levels. Maintaining a healthy weight and avoiding tobacco may help improve HDL levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "Normal HDL cholesterol levels suggest a typical functioning of cholesterol transport and a potentially lower risk of heart disease.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "A balanced diet and regular physical activity can help maintain normal HDL levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "High HDL cholesterol levels may suggest an underlying dyslipidemia or other health conditions.",
+        "common_factors": [
+          "Alcohol use disorder",
+          "Hyperthyroidism",
+          "Primary biliary cholangitis",
+          "Gene changes",
+          "Side effects from medications"
+        ],
+        "age_context": null,
+        "lifestyle_context": "While high HDL is generally considered good, extremely high levels may require further investigation by a healthcare provider.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "high_cholesterol": {
+    "correlation_strength": "strong",
+    "direction": "negative",
+    "associated_markers": [
+      { "marker": "HDL", "correlation": -0.620161 },
+      { "marker": "LDL", "correlation": 0.653138 },
+      { "marker": "Triglycerides", "correlation": 0.767810 }
+    ],
+    "interpretation": "HDL levels show a negative correlation with high cholesterol, while LDL and triglycerides show positive correlation.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/articles/24395-hdl-cholesterol"
+    ]
+  },
+  "Triglycerides": {
+    "test_name": "Triglycerides",
+    "what_it_measures": "Triglycerides are a type of fat (lipid) found in your blood. The test measures the level of triglycerides in your blood to assess your risk of heart disease and other health conditions.",
+    "reference_ranges": {
+      "low": {
+        "value": "Below 90 mg/dL for ages 10-19",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Below 150 mg/dL for adults",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "150 mg/dL and above for adults",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "Low triglyceride levels are generally not a concern and may indicate a healthy lipid profile.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet and regular physical activity can contribute to healthy triglyceride levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "Normal triglyceride levels indicate typical or expected functioning and a lower risk of heart disease.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "A heart-healthy lifestyle, including a balanced diet and regular exercise, supports normal triglyceride levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "High triglyceride levels can increase the risk of heart disease, stroke, and pancreatitis.",
+        "common_factors": [
+          "Excessive alcohol use",
+          "Unmanaged diabetes",
+          "Diet high in sugar, saturated fat, and simple carbohydrates",
+          "Liver disease",
+          "Kidney disease",
+          "Certain medications",
+          "High BMI",
+          "Inflammatory diseases",
+          "Smoking",
+          "Thyroid disease",
+          "Lack of physical activity"
+        ],
+        "age_context": "High triglyceride levels become more of a concern with age, and regular testing is recommended for adults over certain ages.",
+        "lifestyle_context": "Adopting a heart-healthy lifestyle, such as reducing alcohol intake, eating a balanced diet, and engaging in regular physical activity, can help manage triglyceride levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "high_cholesterol": {
+    "correlation_strength": "strong",
+    "direction": "positive",
+    "associated_markers": [
+      { "marker": "Triglycerides", "correlation": 0.767810 },
+      { "marker": "LDL", "correlation": 0.653138 },
+      { "marker": "HDL", "correlation": -0.620161 }
+    ],
+    "interpretation": "Triglycerides and LDL show positive correlation, while HDL shows negative correlation with high cholesterol.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/articles/11117-triglycerides",
+      "https://www.webmd.com/cholesterol-management/high-triglycerides-what-you-need-to-know"
+    ]
+  },
+  "Haemoglobin": {
+    "test_name": "Hemoglobin Test",
+    "what_it_measures": "The hemoglobin test measures the amount of hemoglobin in your blood, which is a protein in red blood cells responsible for carrying oxygen throughout the body.",
+    "reference_ranges": {
+      "low": {
+        "value": "Men: 13 gm/dL or lower, Women: 12 gm/dL or lower",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Men: 14.0-17.5 gm/dL, Women: 12.3-15.3 gm/dL",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "Above normal range",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A low hemoglobin level may indicate that your body isn't getting enough oxygen, which can make you feel tired and weak.",
+        "common_factors": [
+          "Anemia",
+          "Cancer",
+          "Chronic kidney disease",
+          "Iron deficiency",
+          "Vitamin deficiency",
+          "Blood loss"
+        ],
+        "age_context": "Women with menstrual periods and pregnant women commonly have low hemoglobin counts.",
+        "lifestyle_context": "A diet lacking in essential nutrients like iron, vitamin B12, and folate can contribute to low hemoglobin levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal hemoglobin level indicates typical or expected functioning of red blood cells in carrying oxygen throughout the body.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet with adequate nutrients supports normal hemoglobin levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "A high hemoglobin level may suggest that the body needs more oxygen, possibly due to environmental or health-related factors.",
+        "common_factors": [
+          "Smoking",
+          "Living at high altitudes",
+          "Heart or lung conditions",
+          "Dehydration",
+          "Polycythemia vera"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Smoking and living at high altitudes can contribute to higher hemoglobin levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "anemia": {
+    "correlation_strength": "strong",
+    "direction": "negative",
+    "associated_markers": [
+      { "marker": "Haemoglobin", "correlation": -0.650615 },
+      { "marker": "MCV", "correlation": -0.589727 }
+    ],
+    "interpretation": "Hemoglobin and MCV levels show a strong negative correlation with anemia.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/symptoms/17705-low-hemoglobin",
+      "https://www.mayoclinic.org/symptoms/low-hemoglobin/basics/causes/sym-20050760",
+      "https://www.mayoclinic.org/symptoms/high-hemoglobin-count/basics/causes/sym-20050862"
+    ]
+  },
+  "MCV": {
+    "test_name": "Mean Corpuscular Volume (MCV) Blood Test",
+    "what_it_measures": "MCV measures the average size of your red blood cells, which carry oxygen throughout your body.",
+    "reference_ranges": {
+      "low": {
+        "value": "< 80 fl",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "80 - 100 fl",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "> 100 fl",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "Low MCV, known as microcytosis, may indicate smaller than normal red blood cells.",
+        "common_factors": [
+          "Iron-deficiency anemia",
+          "Thalassemia",
+          "Other hemoglobin disorders"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Iron deficiency can be influenced by dietary choices. Ensuring a diet rich in iron may help maintain normal MCV levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal MCV indicates typical red blood cell size, suggesting effective oxygen transport.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet and regular health check-ups can support normal MCV levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "High MCV, known as macrocytosis, may indicate larger than normal red blood cells.",
+        "common_factors": [
+          "Pernicious anemia",
+          "Vitamin B12 deficiency",
+          "Folate deficiency",
+          "Liver disease",
+          "Bone marrow dysfunction",
+          "Chemotherapy treatments"
+        ],
+        "age_context": "Macrocytosis without anemia is more common in infants and older adults.",
+        "lifestyle_context": "Excessive alcohol consumption can contribute to high MCV. A diet rich in vitamin B12 and folate may help maintain normal levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "risk_associations": {
+  "anemia": {
+    "correlation_strength": "strong",
+    "direction": "negative",
+    "associated_markers": [
+      { "marker": "MCV", "correlation": -0.589727 },
+      { "marker": "Haemoglobin", "correlation": -0.650615 }
+    ],
+    "interpretation": "MCV and hemoglobin levels show a strong negative correlation with anemia.",
+    "disclaimer": "This association is based on statistical correlation and does not establish diagnosis or causation."
+  }
+},
+
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/diagnostics/24641-mcv-blood-test",
+      "https://my.clevelandclinic.org/health/diseases/24814-macrocytosis",
+      "https://www.anadolumedicalcenter.com/health-guide/mcv-what-it-is-symptoms-treatment-and-abnormal-levels"
+    ]
+  },
+  "Platelet Count": {
+    "test_name": "Platelet Count (PLT)",
+    "what_it_measures": "A platelet count measures the number of platelets in your blood, which are cell fragments that help your blood clot.",
+    "reference_ranges": {
+      "low": {
+        "value": "Fewer than 150,000 platelets per microliter",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "Between 150,000 and 400,000 platelets per microliter",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "More than 450,000 platelets per microliter",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A low platelet count, known as thrombocytopenia, may indicate a risk of excessive bleeding and can be caused by various conditions or medications.",
+        "common_factors": [
+          "Autoimmune diseases",
+          "Cancers affecting bone marrow",
+          "Chemotherapy",
+          "Medication side effects",
+          "Viral infections"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Heavy alcohol consumption and poor nutrition, particularly low iron, folate, and vitamin B12, can contribute to low platelet production.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal platelet count indicates typical blood clotting function and is generally a sign of good health.",
+        "common_factors": [],
+        "age_context": "Normal platelet counts can decrease with age, especially after age 60, but this is not necessarily a cause for concern.",
+        "lifestyle_context": "",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "A high platelet count, known as thrombocytosis, may increase the risk of blood clots and can be caused by various conditions or stressors.",
+        "common_factors": [
+          "Bone marrow disorders",
+          "Infections",
+          "Inflammation",
+          "Iron deficiency",
+          "Cancer"
+        ],
+        "age_context": "Thrombocytosis is more common in individuals around 60 years old and affects women more than men.",
+        "lifestyle_context": "Good hydration, a balanced diet rich in fruits, vegetables, and whole grains, regular exercise, and stress management can support healthy platelet levels.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/diagnostics/21782-platelet-count",
+      "https://www.mayoclinic.org/diseases-conditions/thrombocytopenia/symptoms-causes/syc-20378293",
+      "https://www.medanta.org/patient-education-blog/high-platelet-count-causes-symptoms-treatment-options"
+    ]
+  },
+  "WBC": {
+    "test_name": "White Blood Cell Count",
+    "what_it_measures": "The test measures the number of white blood cells in a microliter of blood, which are crucial for the immune system to fight infections and diseases.",
+    "reference_ranges": {
+      "low": {
+        "value": "< 4,000 cells/\u00b5L",
+        "label": "Low"
+      },
+      "normal": {
+        "value": "4,000 - 11,000 cells/\u00b5L",
+        "label": "Normal"
+      },
+      "high": {
+        "value": "> 11,000 cells/\u00b5L",
+        "label": "High"
+      }
+    },
+    "interpretations": {
+      "low": {
+        "what_it_means": "A low white blood cell count may indicate a higher risk of infections.",
+        "common_factors": [
+          "Bone marrow failure",
+          "Leukemia",
+          "Chemotherapy",
+          "Vitamin B12 deficiency",
+          "HIV/AIDS"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Maintaining a balanced diet rich in vitamins and practicing good hygiene can support immune health.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "normal": {
+        "what_it_means": "A normal white blood cell count indicates typical immune system functioning.",
+        "common_factors": [],
+        "age_context": null,
+        "lifestyle_context": "A healthy lifestyle, including a balanced diet and regular exercise, supports normal immune function.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      },
+      "high": {
+        "what_it_means": "A high white blood cell count may suggest the body is responding to an infection, inflammation, or stress.",
+        "common_factors": [
+          "Infections",
+          "Inflammation",
+          "Stress",
+          "Autoimmune disorders",
+          "Certain medications",
+          "Bone marrow disorders"
+        ],
+        "age_context": null,
+        "lifestyle_context": "Staying hydrated, managing stress, and eating an anti-inflammatory diet can help maintain a healthy immune response.",
+        "safety_note": "This information is educational and not a medical diagnosis."
+      }
+    },
+    "follow_up": "General informational follow-up only. No advice.",
+    "sources": [
+      "https://my.clevelandclinic.org/health/body/21871-white-blood-cells",
+      "https://www.apollo247.com/health-topics/diet-for-immunity-boosting/how-to-reduce-wbc-count-naturally"
+    ]
+  }
+}

@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI
 from langchain_classic.chains import RetrievalQA
 from rag.load_vectorstore import load_vectorstore
 from rag.prompt import get_prompt
-
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
 # Load env vars (OPENAI_API_KEY)
