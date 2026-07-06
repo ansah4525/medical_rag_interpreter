@@ -1,6 +1,6 @@
 import json
 from dotenv import load_dotenv
-from langchain_community.embeddings import HuggingFaceEmbeddings
+
 from langchain_mistralai import MistralAIEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
